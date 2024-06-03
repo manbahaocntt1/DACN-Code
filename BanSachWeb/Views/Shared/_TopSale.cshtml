@@ -1,11 +1,11 @@
-﻿@using PagedList.Mvc;
-@model PagedList.IPagedList<BanSachWeb.Models.BookViewModel>
+﻿
+@using PagedList.Mvc;
+@model IEnumerable<BanSachWeb.Models.BookViewModel>
 
-@{
-    ViewBag.Title = ViewBag.Title ?? "Books";
-}
+
 <div class="container">
-    <h2 class="mt-4">@ViewBag.Title</h2>
+    <h2 class="mt-5">Sách bán chạy</h2>
+    <p class="d-flex justify-content-end">@Html.ActionLink("Xem tất cả", "TopSale", "Sach")</p>
     <div class="row justify-content-center">
         @foreach (var product in Model)
         {
@@ -59,16 +59,16 @@
             </div>
         }
     </div>
-    <div class="text-center">
-        @Html.PagedListPager(Model, page => Url.Action(ViewBag.nameAction, new { page }), new PagedListRenderOptions() { Display = PagedListDisplayMode.Always })
-    </div>
+   
     <style>
         .product-image {
             width: 100%;
             height: 200px; /* Set a fixed height */
             object-fit: cover; /* Maintain aspect ratio and cover the entire area */
         }
+        .card{
+
+        }
     </style>
+
 </div>
-
-

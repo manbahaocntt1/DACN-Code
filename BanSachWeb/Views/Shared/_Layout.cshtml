@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,15 +26,16 @@
 
                     <div class="col-md-6 ">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Nhập tên sách cần tìm" aria-label="Nhập tên sách cần tìm" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+                            @using (Html.BeginForm("Search", "Sach", FormMethod.Post))
+                            {
+                                <input class="mr-sm-2" type="text" name="SearchKey" placeholder="Nhập từ khóa" />
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Filter">Tìm kiếm</button>
+                            }
                         </div>
                     </div>
 
 
-                    @if (Session["emailOrPhone"] == null)
+                    @if (Session["user"] == null)
                     {
                         <div class="col-md-2 ">
                             <a href="/Register" id="Register" class="btn btn-outline-success">Đăng ký</a>
@@ -42,15 +44,13 @@
                     }
                     else
                     {
+
                         <div class="col-md-2 ">
-                            <a href="#" class="text-decoration-none position-relative" style="color:black">
+                            <a href="/Cart/Index" class="text-decoration-none position-relative" style="color:black">
                                 <div class="">
                                     <span class="fs-3"><i class="fa-solid fa-cart-shopping"></i></span>
                                     <span class="fs-5">Giỏ hàng</span>
-                                    <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
-                                        0
-                                        <span class="visually-hidden">unread messages</span>
-                                    </span>
+
                                 </div>
                             </a>
                         </div>
@@ -74,12 +74,12 @@
                 <div class="col-9">
                     <ul id="mn">
                         <li><a href="/Home">Trang chủ</a></li>
-                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="/Sach/TopSale">Sách bán chạy</a></li>
                         <li><a href="#">Khuyến mãi</a></li>
-                        @if (Session["emailOrPhone"] != null)
+                        @if (Session["username"] != null)
                         {
                             <li>
-                                <a href="#"> @Session["username"]</a>
+                                <a href="#">@Session["username"]</a>
                                 <ul id="sub">
 
                                     <li>@Html.ActionLink("Cập nhật thông tin", "UpdateAccountInfo", "Account")</li>
@@ -95,7 +95,8 @@
 
 
     <section class="content">
-        @RenderBody();
+        @RenderBody()
+
     </section>
 
     <section class="main_footer">
@@ -133,9 +134,12 @@
         <p style="text-align:center">Copyright by nhom 7.</p>
     </section>
 
+
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.dropdown-toggle').click(function () {
@@ -143,13 +147,7 @@
             });
         });
     </script>
-    @RenderSection("scripts", required: false)
-    <!-- required Attribute
-    If required is set to true, any view that uses the layout must define the specified section. If the section is not defined in the view, an error will be thrown.
-    If required is set to false, the section is optional. If the view does not define the section, no error will be thrown, and the layout will render without the content for that section. -->
-    
-
-
+    @RenderSection("scripts",required: false)
 </body>
 
 </html>

@@ -39,6 +39,7 @@ namespace BanSachWeb.Controllers
                 if (user != null)
                 {
                     Session["emailOrPhone"] = user.Email;
+                    Session["user"] = user.TenDangNhap;
                     Session["username"] = user.HoTen;
                     Session["MaTaiKhoan"] = user.MaTaiKhoan;
                     return RedirectToAction("MainContent", "Home");

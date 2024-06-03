@@ -1,0 +1,50 @@
+﻿@model BanSachWeb.Models.DonHang
+
+@{
+    ViewBag.Title = "Order Confirmation";
+}
+
+<div class="mx-5 my-5">
+    <h2>Đặt hàng thành công</h2>
+    <h5 class="my-3">Thông tin sản phẩm</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ChiTietDonHangs)
+            {
+                <tr>
+                    <td>@item.MaSach</td>
+                    <td>@item.SoLuong</td>
+                    <td>@item.GiaBan VNĐ</td>
+                    <td>@(item.SoLuong * item.GiaBan) VNĐ</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>@Model.TongGiaTri VNĐ</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="my-3">
+        <h5>Thông tin khách hàng</h5>
+        <p>Họ tên: @Model.TaiKhoan.HoTen</p>
+        <p>Số điện thoại: @Model.TaiKhoan.SoDienThoai</p>
+        <p>Địa chỉ: @Model.MaDiaChi</p>
+    </div>
+    <div class="my-3">
+        <h5>Thông tin thanh toán</h5>
+        <div class="form-group my-3">
+           <p>Phương thức thanh toán: @Model.PhuongThucThanhToan</p>
+        </div>
+    </div>
+
+    
+</div>
