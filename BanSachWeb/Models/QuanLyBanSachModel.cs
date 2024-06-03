@@ -8,7 +8,7 @@ namespace BanSachWeb.Models
     public partial class QuanLyBanSachModel : DbContext
     {
         public QuanLyBanSachModel()
-            : base("name=QuanLyBanSachModel4")
+            : base("name=QuanLyBanSachModel5")
         {
         }
 
