@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "UpdateAccountInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    td {
+        padding: 15px 40px 15px 40px;
+        text-align: left;
+    }
+
+    .center-table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        margin: 20px;
+    }
+
+        .buttons a {
+            padding: 10px;
+            margin: 10px;
+        }
+</style>
+
+@using (Html.BeginForm("ChangePass","Account"))
+{
+    <div class="container text-center py-3">
+        <h2>Thay đổi mật khẩu</h2>
+        <table class="table_form center-table">
+
+            <tr>
+                <td>
+                    <label for="password">Mật khẩu mới</label>
+                </td>
+                <td>
+                    @Html.TextBox("newPass", null, new { @class = "form-control" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Xác nhận mật khẩu</label>
+                </td>
+                <td>
+                    @Html.TextBox("confirmPass", null, new { @class = "form-control" })
+                </td>
+            </tr>
+        </table>
+        @ViewBag.mess
+        <button type="submit" class="btn btn-success rounded-pill px-3">Save</button>
+        <a href="@Url.Action( "UpdateAccountInfo", "Account")" class="btn btn-secondary btn-user btn-block">Cancel</a>
+    </div>
+}
+
+

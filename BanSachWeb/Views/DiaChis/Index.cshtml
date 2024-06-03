@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BanSachWeb.Models.DiaChi>
+
+@{
+    ViewBag.Title = "Quản lý thông tin nhận hàng";
+}
+
+<h2>Quản lý thông tin nhận hàng</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            Thông tin đầy đủ
+        </th>
+        <th>
+           Mặc định
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <strong>Địa chỉ cụ thể:</strong> @Html.DisplayFor(modelItem => item.DiaChiCuThe) <br />
+            <strong>Số điện thoại nhận hàng:</strong> @Html.DisplayFor(modelItem => item.SoDienThoaiNhanHang) <br />
+            <strong>Tên người nhận:</strong> @Html.DisplayFor(modelItem => item.TenNguoiNhan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MacDinh)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.MaDiaChi }) |
+
+            @Html.ActionLink("Delete", "Delete", new { id = item.MaDiaChi })
+        </td>
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Back", "UpdateAccountInfo", "Account")
+</div>

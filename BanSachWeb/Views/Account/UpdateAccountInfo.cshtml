@@ -1,0 +1,46 @@
+﻿@model BanSachWeb.ViewModels.UpdateAccountInfoViewModel
+
+@{
+    ViewBag.Title = "Update Account Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container text-center py-3">
+    <h2>Cập Nhật Thông Tin Tài Khoản</h2>
+    @using (Html.BeginForm("UpdateAccountInfo", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label for="TenDangNhap">Tên Đăng Nhập</label>
+            @Html.TextBoxFor(m => m.TenDangNhap, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.TenDangNhap, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            <label for="HoTen">Họ Tên</label>
+            @Html.TextBoxFor(m => m.HoTen, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.HoTen, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            <label for="SoDienThoai">Số điện thoại</label>
+            @Html.TextBoxFor(m => m.SoDienThoai, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.SoDienThoai, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            <label for="ThongTinNhanHang">Thông tin nhận hàng</label>
+            @Html.TextBoxFor(m => m.ThongTinNhanHang, new { @class = "form-control", disabled = "disabled" })
+            @Html.ValidationMessageFor(m => m.ThongTinNhanHang, "", new { @class = "text-danger" })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+        <a class="btn btn-secondary" href="@Url.Action("ChangePass","Account")">Đổi mật khẩu</a>
+        <a class="btn btn-secondary" href="@Url.Action("Index","DiaChis")">Quản lý địa chỉ</a>
+        <a class="btn btn-danger" href="@Url.Action("Maincontent","Home")">Hủy bỏ</a>
+    }
+</div>
+

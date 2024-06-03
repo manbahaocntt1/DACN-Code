@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="~/Content/HomeStyle.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="m_top sticky-top">
+        <section class="header ">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-2">
+                        <span class="fs-3">
+                            <a href="/Home"><img src="~/Image/sachhayvn-high-resolution-logo-black-transparent.png" alt="logo" class="img-fluid" /></a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nhập tên sách cần tìm" aria-label="Nhập tên sách cần tìm" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    @if (Session["emailOrPhone"] == null)
+                    {
+                        <div class="col-md-2 ">
+                            <a href="/Register" id="Register" class="btn btn-outline-success">Đăng ký</a>
+                            <a href="/Login" id="Login" class="btn btn-outline-danger">Đăng nhập</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 ">
+                            <a href="#" class="text-decoration-none position-relative" style="color:black">
+                                <div class="">
+                                    <span class="fs-3"><i class="fa-solid fa-cart-shopping"></i></span>
+                                    <span class="fs-5">Giỏ hàng</span>
+                                    <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <section class="main_nav">
+            <div class="container" id="menu">
+                <div class="col=3">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Danh mục sách</a>
+                            <ul class="dropdown-menu">
+                                @Html.Action("GetCategories", "Sach")
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <ul id="mn">
+                        <li><a href="/Home">Trang chủ</a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        @if (Session["emailOrPhone"] != null)
+                        {
+                            <li>
+                                <a href="#"> @Session["username"]</a>
+                                <ul id="sub">
+
+                                    <li>@Html.ActionLink("Cập nhật thông tin", "UpdateAccountInfo", "Account")</li>
+                                    <li>@Html.ActionLink("Đăng xuất", "Logout", "Account")</li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="content">
+        @RenderBody();
+    </section>
+
+    <section class="main_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="sub_foot">
+                        <li><h2>SachHay.vn</h2></li>
+                        <li><h3>Dia chi:</h3></li>
+                        <li><p>123 456 abc xyz fevt  tvwtv tvw3tvnw3tv tvwn3</p></li>
+                        <li><h3>Lien he</h3></li>
+                        <li><p>Email:abc@gmail.com</p></li>
+                        <li><p>SDT: 012345678</p></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="sub_foot">
+                        <li> <h3>Dich vu</h3></li>
+                        <li><a href="#">Dieu khoan su dung</a></li>
+                        <li><a href="#">Chinh sach bao mat</a></li>
+                        <li><a href="#">Chinh sach thanh toan</a></li>
+                        <li><a href="#">Ve SachHay.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="sub_foot">
+                        <li><h3>Ho tro</h3></li>
+                        <li><a href="#">Chinh sach doi - tra - hoan tien</a></li>
+                        <li><a href="#">Chinh sach van chuyen</a></li>
+                        <li><a href="#">Phuong thuc thanh toan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center">Copyright by nhom 7.</p>
+    </section>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').click(function () {
+                $(this).next('.dropdown-menu').toggle();
+            });
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+    <!-- required Attribute
+    If required is set to true, any view that uses the layout must define the specified section. If the section is not defined in the view, an error will be thrown.
+    If required is set to false, the section is optional. If the view does not define the section, no error will be thrown, and the layout will render without the content for that section. -->
+    
+
+
+</body>
+
+</html>

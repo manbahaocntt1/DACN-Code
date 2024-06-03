@@ -1,0 +1,20 @@
+﻿@model List<BanSachWeb.Models.DanhMucChinh>
+
+@foreach (var category in Model)
+{
+    <li>
+        <a href="#">@category.TenDanhMuc</a>
+        @if (category.DanhMucPhus.Any())
+        {
+            <ul>
+                @foreach (var subcategory in category.DanhMucPhus)
+                {
+                    <li>
+                        <a href="#">@subcategory.TenDanhMuc</a>
+                    </li>
+                }
+            </ul>
+        }
+    </li>
+}
+
