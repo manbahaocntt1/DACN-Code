@@ -1,0 +1,156 @@
+﻿@model BanSachWeb.ViewModels.BookDetailsViewModel
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img class="card-img-top product-image-detail" src="@Url.Content("~/Content/Image/" + Model.Book.AnhSach)" alt="Product Image" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h1 class="card-title">@Model.Book.TenSach</h1>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <p class="card-text">Tác giả:</p>
+                                </div>
+                                <div class="col-md-8">
+                                    @if (Model.Book.MaTacGia.HasValue)
+                                    {
+                                        BanSachWeb.Models.QuanLyBanSachModel db = new BanSachWeb.Models.QuanLyBanSachModel();
+                                        var tacGia = db.TacGias.Find(Model.Book.MaTacGia);
+                                        if (tacGia != null)
+                                        {
+                                            <p class="card-text">@tacGia.TenTacGia</p>
+                                        }
+                                        else
+                                        {
+                                            <p class="card-text">Không có tác giả</p>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <p class="card-text">Không có tác giả</p>
+                                    }
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <p class="card-text">Giá:</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">@Model.Book.GiaBan VNĐ</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <p class="card-text">Tóm tắt:</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">@Model.Book.TomTat</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <p class="card-text">Còn dư:</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">@Model.Book.SoLuongConDu</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <p class="card-text">Số lượng:</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <input id="quantity" name="quantity" type="number" class="form-control" aria-label="Quantity" value="1" min="1" max="@Model.Book.SoLuongConDu">
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                @using (Html.BeginForm("AddToCart", "Cart", FormMethod.Post, new { @class = "add-to-cart-form" }))
+                                {
+                                    @Html.Hidden("maSach", Model.Book.MaSach) <!-- Sử dụng Hidden field để truyền mã sách quantity -->
+                                    @Html.Hidden("quantity", 1)
+                                    <button type="submit" class="btn btn-primary add-to-cart-button">Thêm</button> <!-- Added the class here -->
+                                }
+                                @using (Html.BeginForm("BuyNow", "Cart", FormMethod.Post))
+                                {
+                                    @Html.Hidden("maSach", Model.Book.MaSach)
+                                    @Html.Hidden("quantity", 1)
+                                    <button type="submit" class="btn btn-success">Mua hàng</button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Relevant Books</h3>
+<div class="row">
+    @foreach (var relevantBook in Model.RelevantBooks)
+    {
+        <div class="col-md-3">
+            <div class="card">
+                <img src="~/Content/Image/@relevantBook.AnhSach" class="card-img-top" alt="@relevantBook.TenSach" style="height: 200px; width: auto;" />
+                <div class="card-body">
+                    <h5 class="card-title">@relevantBook.TenSach</h5>
+                    <p class="card-text">@relevantBook.GiaBan VNĐ</p>
+                    @Html.ActionLink("View Details", "SachDetail", "Sach", new { id = relevantBook.MaSach }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .product-image-detail {
+        width: 400px;
+        height: auto;
+    }
+</style>
+
+<script>
+    document.getElementById("addToCartButton").addEventListener("click", function (event) {
+        event.preventDefault();
+        var quantity = document.getElementById("quantity").value;
+        document.getElementById("hiddenQuantity").value = quantity;
+        document.getElementById("addToCartForm").submit();
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.add-to-cart-button').click(function (event) {
+        event.preventDefault(); // Prevent default form submission
+        var form = $(this).closest('form');
+        var formData = form.serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: formData,
+            success: function (response) {
+                if (response.success) {
+                    alert('Thêm vào giỏ hàng thành công!');
+                } else {
+                    if (response.notLoggedIn) {
+                        alert('Vui lòng đăng nhập.');
+                        // Optionally, redirect to the login page
+                        window.location.href = '/Account/Login';
+                    } else {
+                        alert('Thêm vào giỏ hàng thất bại.');
+                    }
+                }
+            },
+            error: function () {
+                alert('Có lỗi xảy ra. Vui lòng thử lại.');
+            }
+        });
+    });
+});
+</script>

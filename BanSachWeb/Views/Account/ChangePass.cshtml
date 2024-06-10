@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "UpdateAccountInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .center-table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        margin: 20px;
+    }
+
+        .buttons a {
+            padding: 10px;
+            margin: 10px;
+        }
+
+    #bntluu {
+        padding: 6px 25px 6px 25px;
+    }
+</style>
+
+@using (Html.BeginForm("ChangePass", "Account"))
+{
+    <div class="container text-center py-3">
+        <div class="card" style="width: 100%; max-width: 600px; margin-top: 20px;">
+            <div class="card-body text-center">
+                <h2>Thay đổi mật khẩu</h2>
+                <table class="table_form center-table">
+
+                    <tr>
+                        <td>
+                            <label for="password">Mật khẩu mới:</label>
+                        </td>
+                        <td>
+                            @Html.TextBox("newPass", null, new { @class = "form-control" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Xác nhận mật khẩu:</label>
+                        </td>
+                        <td>
+                            @Html.TextBox("confirmPass", null, new { @class = "form-control" })
+                        </td>
+                    </tr>
+                </table>
+                @ViewBag.mess
+                <div class="d-inline">
+                    <button id="bntluu" type="submit" class="btn btn-success ms-3">Lưu</button>
+                    <a href="@Url.Action("UpdateAccountInfo", "Account")" type="button" class="btn btn-danger ms-3">Hủy bỏ</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+}
+
+

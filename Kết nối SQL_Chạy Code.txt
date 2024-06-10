@@ -1,0 +1,28 @@
+Phần kết nối SQL
+chạy file query SQLDACN
+copy thư mục Models vào thư mục mới Model để back up
+sau đó xóa Models và tạo lại Thư mục Models
+chuột phải Models chọn add - new item , _data, ADO.net, đổi phần name: QuanLyBanSachModel, chọn next, tạo mới connection, next chọn tabels, finish
+Phần giao diện, boostrap
+
+
+
+
+Bugs:
+Đăng Ký: chưa hiện thông báo lỗi
+Cập nhật thông tin: chưa kiểm chứng các số điện thoại trong database
+Đăng xuất: đăng xuất chưa xét phần menu, session
+Kiểm thử 
+Hải: Quản lý danh mục
+Hồng: Đăng Ký
+Vinh: Cập nhật thông tin (Đổi mật khẩu, quản lý địa chỉ)
+Hào: Quản lý sách
+
+Git hub:
+git clone https://github.com/your-username/your-repo-name.git
+git checkout -b feature-branch-name
+git add .
+git commit -m "Describe your changes"
+git push origin feature-branch-name
+
+

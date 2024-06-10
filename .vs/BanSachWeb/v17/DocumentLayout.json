@@ -1,0 +1,524 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\models\\payments\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\payments\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\models\\momo\\config\\momoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\momo\\config\\momoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\shared\\_topsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\shared\\_topsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\views\\home\\maincontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\home\\maincontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\views\\sach\\_topnewbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\sach\\_topnewbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\viewmodels\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\viewmodels\\searchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\viewmodels\\searchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|c:\\users\\manba\\documents\\\u0111\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\code\\bansachweb\\views\\account\\updateaccountinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\account\\updateaccountinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\sach\\sachdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\sach\\sachdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\quanlybansachmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\quanlybansachmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\diachis\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\diachis\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\models\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\models\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\views\\account\\createaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\views\\account\\createaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\controllers\\diachiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\controllers\\diachiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\bansachweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC32E33-1C88-484C-A176-E384AAAAB994}|BanSachWeb\\BanSachWeb.csproj|solutionrelative:bansachweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T07:33:19.135Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\CartController.cs",
+              "RelativeToolTip": "BanSachWeb\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAmwF8BAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T02:07:49.413Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_TopSale.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Shared\\_TopSale.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Shared\\_TopSale.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Shared\\_TopSale.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Shared\\_TopSale.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T17:19:07.714Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MomoConfig.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\MoMo\\Config\\MomoConfig.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\MoMo\\Config\\MomoConfig.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\MoMo\\Config\\MomoConfig.cs*",
+              "RelativeToolTip": "BanSachWeb\\Models\\MoMo\\Config\\MomoConfig.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T07:33:16.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Web.config",
+              "RelativeDocumentMoniker": "BanSachWeb\\Web.config",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Web.config",
+              "RelativeToolTip": "BanSachWeb\\Web.config",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwEIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-10T06:29:56.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VnPayLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\Payments\\VnPayLibrary.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\Payments\\VnPayLibrary.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\Payments\\VnPayLibrary.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\Payments\\VnPayLibrary.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAvwHcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:36:17.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwD0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T02:47:35.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SachController.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\SachController.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Controllers\\SachController.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\SachController.cs",
+              "RelativeToolTip": "BanSachWeb\\Controllers\\SachController.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAwwAQBAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T00:09:42.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Sach\\Index.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\Index.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Sach\\Index.cshtml",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwHYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T17:07:02.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAABMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T18:00:10.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainContent.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Home\\MainContent.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Home\\MainContent.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Home\\MainContent.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Home\\MainContent.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T18:56:07.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_TopNewBooks.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\_TopNewBooks.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Sach\\_TopNewBooks.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\_TopNewBooks.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Sach\\_TopNewBooks.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwGoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T02:21:44.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\ViewModels\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\ViewModels\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\ViewModels\\BookViewModel.cs",
+              "RelativeToolTip": "BanSachWeb\\ViewModels\\BookViewModel.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:14:47.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\Sach.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\Sach.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\Sach.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\Sach.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T14:12:23.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SearchViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\ViewModels\\SearchViewModel.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\ViewModels\\SearchViewModel.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\ViewModels\\SearchViewModel.cs",
+              "RelativeToolTip": "BanSachWeb\\ViewModels\\SearchViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T14:54:55.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:20:15.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateAccountInfo.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\UpdateAccountInfo.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Account\\UpdateAccountInfo.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\UpdateAccountInfo.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Account\\UpdateAccountInfo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:23:05.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BanSachWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAANQAAAAAAAAAAAAAANQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:02:25.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SachDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\SachDetail.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Sach\\SachDetail.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Sach\\SachDetail.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Sach\\SachDetail.cshtml",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAEwIAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T03:52:33.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QuanLyBanSachModel.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\QuanLyBanSachModel.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\QuanLyBanSachModel.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\QuanLyBanSachModel.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\QuanLyBanSachModel.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:58:23.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\DonHang.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\DonHang.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\DonHang.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T05:53:26.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChiTietGioHang.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\ChiTietGioHang.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\ChiTietGioHang.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\ChiTietGioHang.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\ChiTietGioHang.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:53:29.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateAddress.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\CreateAddress.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Account\\CreateAddress.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Account\\CreateAddress.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\Account\\CreateAddress.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T09:41:01.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChiTietDonHang.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\ChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\ChiTietDonHang.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\ChiTietDonHang.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\ChiTietDonHang.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T15:23:15.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Web.config",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\Web.config",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\Web.config",
+              "RelativeToolTip": "BanSachWeb\\Views\\Web.config",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-07T14:41:03.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DiaChi.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\DiaChi.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Models\\DiaChi.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Models\\DiaChi.cs",
+              "RelativeToolTip": "BanSachWeb\\Models\\DiaChi.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T08:44:13.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\DiaChis\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BanSachWeb\\Views\\DiaChis\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Views\\DiaChis\\Edit.cshtml",
+              "RelativeToolTip": "BanSachWeb\\Views\\DiaChis\\Edit.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T09:17:05.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DiaChisController.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\DiaChisController.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Controllers\\DiaChisController.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Controllers\\DiaChisController.cs",
+              "RelativeToolTip": "BanSachWeb\\Controllers\\DiaChisController.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAmwJcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T08:42:47.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "BanSachWeb\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T08:26:53.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "BanSachWeb\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\manba\\Documents\\\u0110\u1ED3 \u00E1n chuy\u00EAn ng\u00E0nh\\Code\\BanSachWeb\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "BanSachWeb\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:23:37.007Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
