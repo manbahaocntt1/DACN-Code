@@ -117,8 +117,13 @@ namespace BanSachWeb.Models.Payments
     {
 
 
-        public static String HmacSHA512(string key, String inputData)
+        public static string HmacSHA512(string key, string inputData)
         {
+            if (string.IsNullOrEmpty(key))
+            {
+                throw new ArgumentException("Key cannot be null or empty", nameof(key));
+            }
+
             var hash = new StringBuilder();
             byte[] keyBytes = Encoding.UTF8.GetBytes(key);
             byte[] inputBytes = Encoding.UTF8.GetBytes(inputData);
@@ -133,6 +138,7 @@ namespace BanSachWeb.Models.Payments
 
             return hash.ToString();
         }
+
         public static string GetIpAddress()
         {
             string ipAddress;

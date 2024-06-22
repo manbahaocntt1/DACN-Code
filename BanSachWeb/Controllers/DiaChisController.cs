@@ -17,8 +17,9 @@ namespace BanSachWeb.Controllers
         // GET: DiaChis
         public ActionResult Index()
         {
-            var diaChis = db.DiaChis.Include(d => d.TaiKhoan);
-            return View(diaChis.ToList());
+            var userId = (int)Session["MaTaiKhoan"];
+            var diaChis = db.DiaChis.Where(d => d.MaTaiKhoan == userId).ToList();
+            return View(diaChis);
         }
 
         

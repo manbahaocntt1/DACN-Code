@@ -8,7 +8,7 @@ namespace BanSachWeb.Models
     public partial class QuanLyBanSachModel : DbContext
     {
         public QuanLyBanSachModel()
-            : base("name=QuanLyBanSachModel5")
+            : base("name=QuanLyBanSachModel9")
         {
         }
 
@@ -83,11 +83,6 @@ namespace BanSachWeb.Models
             modelBuilder.Entity<Sach>()
                 .Property(e => e.GiaBan)
                 .HasPrecision(10, 2);
-
-            modelBuilder.Entity<Sach>()
-                .HasMany(e => e.TacGias)
-                .WithMany(e => e.Saches)
-                .Map(m => m.ToTable("TacGia_Sach").MapLeftKey("MaSach").MapRightKey("MaTacGia"));
         }
     }
 }

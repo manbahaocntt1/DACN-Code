@@ -17,7 +17,6 @@ namespace BanSachWeb.Models
             PhanHois = new HashSet<PhanHoi>();
             KhuyenMais = new HashSet<KhuyenMai>();
             ChiNhanhs = new HashSet<ChiNhanh>();
-            TacGias = new HashSet<TacGia>();
         }
 
         [Key]
@@ -58,10 +57,6 @@ namespace BanSachWeb.Models
 
         public int? MaDanhMuc { get; set; }
 
-        public int? MaGioHang { get; set; }
-
-        public int? MaChiTietDonHang { get; set; }
-
         public bool? Visible { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -78,8 +73,5 @@ namespace BanSachWeb.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiNhanh> ChiNhanhs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TacGia> TacGias { get; set; }
     }
 }

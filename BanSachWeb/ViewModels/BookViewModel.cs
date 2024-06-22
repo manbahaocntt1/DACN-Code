@@ -22,6 +22,7 @@ namespace BanSachWeb.Models
         public decimal? GiaBan { get; set; }
 
         public int? SoLuongDaBan { get; set; }
+        public string TenTacGia { get; set; }
         public double DiscountPercentage
         {
             get
@@ -34,6 +35,7 @@ namespace BanSachWeb.Models
                 return 0;
             }
         }
+        public int? MaDanhMuc { get; set; } // Update to include MaDanhMuc
 
 
     }

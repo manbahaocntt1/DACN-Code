@@ -42,6 +42,13 @@ namespace BanSachWeb.Controllers
                     Session["user"] = user.TenDangNhap;
                     Session["username"] = user.HoTen;
                     Session["MaTaiKhoan"] = user.MaTaiKhoan;
+
+                    string redirectUrl = Session["ReturnUrl"] as string;
+                    if (!string.IsNullOrEmpty(redirectUrl))
+                    {
+                        Session["ReturnUrl"] = null; // Clear the return URL
+                        return Redirect(redirectUrl); // Redirect to the stored URL
+                    }
                     return RedirectToAction("MainContent", "Home");
                 }
                 else
@@ -61,6 +68,8 @@ namespace BanSachWeb.Controllers
         public ActionResult Logout()
         {
             Session.Remove("emailOrPhone");
+            Session.Remove("username");
+            Session.Remove("MaTaiKhoan");
             return RedirectToAction("Login", "Account");
         }
         //Use case Quên mật khẩu
@@ -203,26 +212,37 @@ namespace BanSachWeb.Controllers
         [HttpPost]
         public ActionResult UpdateAccountInfo(UpdateAccountInfoViewModel model)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid)//checks whether the model binding and validation processes have succeeded.
             {
                 return View(model);
             }
-
-            if (Session["emailOrPhone"] != null)
+            else
             {
-                string userEmail = Session["emailOrPhone"].ToString();
-                var user = db.TaiKhoans.FirstOrDefault(p => p.Email == userEmail);
-                if (user != null)
+                if (Session["emailOrPhone"] != null)
                 {
-                    user.TenDangNhap = model.TenDangNhap;
-                    user.Email = model.Email;
-                    user.HoTen = model.HoTen;
-                    user.SoDienThoai = model.SoDienThoai;
-                    Session["username"] = user.HoTen;
-                    db.SaveChanges();
-                    return RedirectToAction("MainContent", "Home");
+                    string userEmail = Session["emailOrPhone"].ToString();
+                    var user = db.TaiKhoans.FirstOrDefault(p => p.Email == userEmail);
+                    if (user != null)
+                    {
+
+                        user.TenDangNhap = model.TenDangNhap;
+                        user.Email = model.Email;
+                        user.HoTen = model.HoTen;
+                        bool phoneNumberExists = db.TaiKhoans.Any(t => t.SoDienThoai == model.SoDienThoai && t.Email != userEmail);
+                        if (phoneNumberExists)
+                        {
+                            ModelState.AddModelError("SoDienThoai", "Số điện thoại đã tồn tại trong hệ thống!");
+                            return View(model);// Xử lý check xem số điện thoại mới đã tồn tại trong database hay chưa?
+                        }
+                        user.SoDienThoai = model.SoDienThoai;
+                        Session["username"] = user.HoTen;
+                        db.SaveChanges();
+                        return RedirectToAction("MainContent", "Home");
+                    }
                 }
             }
+
+            
             return RedirectToAction("Error", "Home");
         }
        

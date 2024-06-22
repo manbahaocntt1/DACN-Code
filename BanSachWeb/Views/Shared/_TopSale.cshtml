@@ -40,16 +40,19 @@
                     <div class="row">
                         <div class="col-2 "></div>
                         <div class="col-4 ">
-                            <button type="button" class="btn btn-primary btn-block">
-                                Mua
-                            </button>
+                            @using (Html.BeginForm("BuyNow", "Cart", FormMethod.Post))
+                            {
+                                @Html.Hidden("maSach", product.MaSach)
+                                @Html.Hidden("quantity", 1)
+                                <button type="submit" class="btn btn-success">Mua</button>
+                            }
                         </div>
                         <div class="col-4">
-                            @using (Html.BeginForm("AddToCart", "Cart", FormMethod.Post))
+                            @using (Html.BeginForm("AddToCart", "Cart", FormMethod.Post, new { @class = "add-to-cart-form" }))
                             {
                                 @Html.Hidden("maSach", product.MaSach) <!-- Sử dụng Hidden field để truyền mã sách quantity -->
                                 @Html.Hidden("quantity", 1)
-                                <button type="submit" class="btn btn-primary">Thêm</button>
+                                <button type="submit" class="btn btn-primary add-to-cart-button_sale">Thêm</button> <!-- Added the class here -->
                             }
                         </div>
                     </div>
@@ -70,5 +73,43 @@
 
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.add-to-cart-button_sale').off('click').click(function (event) {
+            event.preventDefault(); // Prevent default form submission
+            var form = $(this).closest('form');
+            var formData = form.serialize();
+            
+            $.ajax({
+                type: 'POST',
+                url: form.attr('action'),
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                       
+                        alert('Thêm vào giỏ hàng thành công!');
+                       
+                        
+                    } else {
+                        if (response.notLoggedIn) {
+                           
+                            alert('Vui lòng đăng nhập.');
+                            
+                            // Optionally, redirect to the login page
+                            window.location.href = '/Account/Login';
+                            
+                        } else {
+                            alert('Thêm vào giỏ hàng thất bại.');
+                        }
+                    }
+                },
+                error: function () {
+                    alert('Có lỗi xảy ra. Vui lòng thử lại.');
+                }
+            });
+        });
+    });
+</script>
 
 </div>

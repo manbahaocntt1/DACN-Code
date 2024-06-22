@@ -19,6 +19,7 @@ namespace BanSachWeb.Models
         public int? SoLuong { get; set; }
 
         public decimal? ThanhTien { get; set; }
+        public bool IsSelected { get; set; } // New property
 
         public virtual GioHang GioHang { get; set; }
 

@@ -16,7 +16,11 @@ namespace BanSachWeb.ViewModels
         {
             get
             {
-                return GioHang.GetTotalPrice();
+                if (GioHang != null && GioHang.ChiTietGioHangs != null)
+                {
+                    return GioHang.ChiTietGioHangs.Sum(item => item.ThanhTien ?? 0);
+                }
+                return 0;
             }
         }
     }

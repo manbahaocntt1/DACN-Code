@@ -6,6 +6,23 @@
 }
 <div class="container">
     <h2 class="mt-4">@ViewBag.Title</h2>
+    <!-- Filter Form -->
+    <form method="get" action="@Url.Action(ViewBag.nameAction)">
+        <input type="hidden" name="SearchKey" value="@Request.QueryString["SearchKey"]" />
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <label for="minPrice">Min Price</label>
+                <input type="number" class="form-control" id="minPrice" name="minPrice" value="@ViewBag.minPrice" placeholder="Min Price" />
+            </div>
+            <div class="col-md-3">
+                <label for="maxPrice">Max Price</label>
+                <input type="number" class="form-control" id="maxPrice" name="maxPrice" value="@ViewBag.maxPrice" placeholder="Max Price" />
+            </div>
+            <div class="col-md-3 align-self-end">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+    </form>
     <div class="row justify-content-center">
         @foreach (var product in Model)
         {
@@ -18,6 +35,7 @@
                             <!-- Product image-->
                             <img class="card-img-top product-image" src="@Url.Content("~/Content/Image/" + product.AnhSach)" alt="Product Image" />
                             <!-- Product details-->
+
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
@@ -40,16 +58,19 @@
                     <div class="row">
                         <div class="col-2 "></div>
                         <div class="col-4 ">
-                            <button type="button" class="btn btn-primary btn-block">
-                                Mua
-                            </button>
+                            @using (Html.BeginForm("BuyNow", "Cart", FormMethod.Post))
+                            {
+                                @Html.Hidden("maSach", product.MaSach)
+                                @Html.Hidden("quantity", 1)
+                                <button type="submit" class="btn btn-success">Mua</button>
+                            }
                         </div>
                         <div class="col-4">
-                            @using (Html.BeginForm("AddToCart", "Cart", FormMethod.Post))
+                            @using (Html.BeginForm("AddToCart", "Cart", FormMethod.Post, new { @class = "add-to-cart-form" }))
                             {
                                 @Html.Hidden("maSach", product.MaSach) <!-- Sử dụng Hidden field để truyền mã sách quantity -->
                                 @Html.Hidden("quantity", 1)
-                                <button type="submit" class="btn btn-primary">Thêm</button>
+                                <button type="submit" class="btn btn-primary add-to-cart-button">Thêm</button> <!-- Added the class here -->
                             }
                         </div>
                     </div>
@@ -60,7 +81,7 @@
         }
     </div>
     <div class="text-center">
-        @Html.PagedListPager(Model, page => Url.Action(ViewBag.nameAction, new { page }), new PagedListRenderOptions() { Display = PagedListDisplayMode.Always })
+        @Html.PagedListPager(Model, page => Url.Action(ViewBag.nameAction, new { page, minPrice = ViewBag.minPrice, maxPrice = ViewBag.maxPrice, SearchKey = ViewBag.SearchKey }), new PagedListRenderOptions() { Display = PagedListDisplayMode.Always })
     </div>
     <style>
         .product-image {
@@ -69,6 +90,47 @@
             object-fit: cover; /* Maintain aspect ratio and cover the entire area */
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.add-to-cart-button').click(function (event) {
+                event.preventDefault(); // Prevent default form submission
+                var form = $(this).closest('form');
+                var formData = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: form.attr('action'),
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            alert('Thêm vào giỏ hàng thành công!');
+                        } else {
+                            if (response.notLoggedIn) {
+                                alert('Vui lòng đăng nhập.');
+                                // Optionally, redirect to the login page
+                                window.location.href = '/Account/Login';
+                            } else {
+                                alert('Thêm vào giỏ hàng thất bại.');
+                            }
+                        }
+                    },
+                    error: function () {
+                        alert('Có lỗi xảy ra. Vui lòng thử lại.');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Update SearchKey hidden input value in the filter form when the search form is submitted
+            $('#searchForm').submit(function () {
+                $('input[name="SearchKey"]').val($('#searchBox').val());
+            });
+        });
+    </script>
+
 </div>
 
 
